@@ -37,6 +37,7 @@ Itâ€™s not designed to store a lot of data.
 ## tip
 ```
 For android, You must have to update minSdkVersion to 21 (or higher).
+ÐÞ¸ÄµÄÊÇ<project name>/android/app/build.gradle minSdkVersion
 On iOS, lines below have to be added inside ios/Runner/Info.plist in order the access the camera.
 <key>NSCameraUsageDescription</key>
 <string>Explanation on why the camera access is needed.</string>
