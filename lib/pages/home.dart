@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:startup_namer/model/ScreenArguments.dart';
 import 'package:startup_namer/route/customRoute.dart';
 
-class ButtionList extends StatefulWidget {
+class HomePage extends StatefulWidget {
+  static const routeName = '/HomePage';
   @override
-  _ButtionListState createState() => _ButtionListState();
+  _HomePageState createState() => _HomePageState();
 }
 
-class _ButtionListState extends State<ButtionList> {
-  // entities = CustomRoute.routeList.
+class _HomePageState extends State<HomePage> {
   List<String> keys = CustomRoute.routeList.keys.toList();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Startup Name'),
-      ),
+      // appBar: AppBar(
+      //   title: Text('HomePage'),
+      // ),
       body: _buildListView(),
     );
   }
@@ -30,7 +30,7 @@ class _ButtionListState extends State<ButtionList> {
   }
 
   _buildRow(int i) {
-    if (i < 5) {
+    if (i < CustomRoute.routeList.length) {
       return ListTile(
         title: Text(keys[i]),
         onTap: () {

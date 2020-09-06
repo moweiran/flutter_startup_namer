@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatelessWidget {
+  static const routeName = '/MainScreen';
   @override
   Widget build(BuildContext context) {
     return Scaffold(

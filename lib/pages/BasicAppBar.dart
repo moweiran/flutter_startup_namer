@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class BasicAppBar extends StatefulWidget {
+  static const routeName = '/BasicAppBar';
+
   @override
   _BasicAppBarState createState() => _BasicAppBarState();
 }
