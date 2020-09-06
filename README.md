@@ -15,8 +15,29 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-
+# Demo Install
 1. Flutter SDK 1.20.3-stable
 2. Place then contained flutter in the 'D:\src\flutter'
 3. set evvironment variables path 
 4. flutter doctor
+
+
+# Fake Online REST API for Testing and Prototyping
+https://jsonplaceholder.typicode.com/
+
+测试db_test.dart
+flutter run lib/db_test.dart
+
+# shared preferences 
+Supported types
+Only primitive types can be used: int, double, bool, string, and stringList.
+It’s not designed to store a lot of data.
+
+# camera
+## tip
+```
+For android, You must have to update minSdkVersion to 21 (or higher).
+On iOS, lines below have to be added inside ios/Runner/Info.plist in order the access the camera.
+<key>NSCameraUsageDescription</key>
+<string>Explanation on why the camera access is needed.</string>
+```

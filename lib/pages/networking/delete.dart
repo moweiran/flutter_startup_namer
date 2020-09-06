@@ -3,6 +3,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:startup_namer/model/Album.dart';
 
 Future<Album> fetchAlbum() async {
   final response =
@@ -36,20 +37,6 @@ Future<Album> deleteAlbum(String id) async {
     // If the server did not return a "200 OK response",
     // then throw an exception.
     throw Exception('Failed to delete album.');
-  }
-}
-
-class Album {
-  final int id;
-  final String title;
-
-  Album({this.id, this.title});
-
-  factory Album.fromJson(Map<String, dynamic> json) {
-    return Album(
-      id: json['id'],
-      title: json['title'],
-    );
   }
 }
 
