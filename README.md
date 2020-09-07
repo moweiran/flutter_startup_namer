@@ -25,20 +25,29 @@ samples, guidance on mobile development, and a full API reference.
 # Fake Online REST API for Testing and Prototyping
 https://jsonplaceholder.typicode.com/
 
-测试db_test.dart
+娴�??瘯db_test.dart
 flutter run lib/db_test.dart
 
-# shared preferences 
+# shared preferences 鍏变韩璁剧疆
 Supported types
 Only primitive types can be used: int, double, bool, string, and stringList.
-It’s not designed to store a lot of data.
+It鈥檚 not designed to store a lot of data.
 
-# camera
-## tip
+# camera 鐓х浉鏈烘彃浠�?
 ```
 For android, You must have to update minSdkVersion to 21 (or higher).
-�޸ĵ���<project name>/android/app/build.gradle minSdkVersion
-On iOS, lines below have to be added inside ios/Runner/Info.plist in order the access the camera.
+淇�鏀硅矾寰� android/app/build.gradle鐨勯厤缃�?
+android {
+    defaultConfig {
+        minSdkVersion 21
+    }
+}
+On iOS, lines below have to be added inside ios/Runner/Info.plist in order the access the 
 <key>NSCameraUsageDescription</key>
 <string>Explanation on why the camera access is needed.</string>
+```
+# fluwx 寰�淇＄浉鍏�?搷浣�?
+## fluwx2.3.0 闇€瑕佽�剧疆android/build.gradle 涓�
+```
+ext.kotlin_version = '1.3.71'// fluwx2.3.0 瑕佹眰kotlin1.3.71
 ```

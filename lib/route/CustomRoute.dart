@@ -14,6 +14,7 @@ import 'package:startup_namer/pages/animation/AnimatedContainerApp.dart';
 import 'package:startup_namer/pages/animation/PhysicsCardDragDemo.dart';
 import 'package:startup_namer/pages/animation/opacity-animation.dart';
 import 'package:startup_namer/pages/animation/page-route-animation.dart';
+import 'package:startup_namer/pages/barcode/barcode.dart';
 import 'package:startup_namer/pages/form/MyCustomForm.dart';
 import 'package:startup_namer/pages/persistence/ReadingWritingFiles.dart';
 import 'package:startup_namer/pages/networking/CreateDataExample.dart';
@@ -33,6 +34,8 @@ import 'package:startup_namer/pages/plugins/CameraExample.dart';
 import 'package:startup_namer/pages/plugins/VideoPlayerScreen.dart';
 import 'package:startup_namer/pages/snackbar/SnackBarDemo.dart';
 import 'package:startup_namer/pages/tabs/tab-bar.dart';
+import 'package:startup_namer/pages/wechat/SendAuthPage.dart';
+import 'package:startup_namer/pages/wechat/ShareWebPagePage.dart';
 import 'package:startup_namer/screens/cart.dart';
 import 'package:startup_namer/screens/catalog.dart';
 import 'package:startup_namer/screens/login.dart';
@@ -79,6 +82,9 @@ class CustomRoute {
     '/login': (context) => MyLogin(),
     '/catalog': (context) => MyCatalog(),
     '/cart': (context) => MyCart(),
+    '/BarcodePage': (context) => BarcodePage(),
+    '/SendAuthPage': (context) => SendAuthPage(),
+    '/ShareWebPagePage': (context) => ShareWebPagePage(),
   };
 }
 
