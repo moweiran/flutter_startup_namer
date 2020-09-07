@@ -40,6 +40,8 @@ dependencies:
   video_player: ^0.10.12+2
   camera: ^0.5.8+5
   provider:  ^4.3.2
+  barcode_scan: ^1.0.0
+  fluwx: ^2.3.0
 dev_dependencies:
   flutter_test:
     sdk: flutter

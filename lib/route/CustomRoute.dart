@@ -14,6 +14,7 @@ import 'package:startup_namer/pages/animation/AnimatedContainerApp.dart';
 import 'package:startup_namer/pages/animation/PhysicsCardDragDemo.dart';
 import 'package:startup_namer/pages/animation/opacity-animation.dart';
 import 'package:startup_namer/pages/animation/page-route-animation.dart';
+import 'package:startup_namer/pages/barcode/barcode.dart';
 import 'package:startup_namer/pages/form/MyCustomForm.dart';
 import 'package:startup_namer/pages/persistence/ReadingWritingFiles.dart';
 import 'package:startup_namer/pages/networking/CreateDataExample.dart';
@@ -79,6 +80,7 @@ class CustomRoute {
     '/login': (context) => MyLogin(),
     '/catalog': (context) => MyCatalog(),
     '/cart': (context) => MyCart(),
+    '/BarcodePage': (context) => BarcodePage(),
   };
 }
 
