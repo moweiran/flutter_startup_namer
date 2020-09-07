@@ -10,7 +10,7 @@ class MyCatalog extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           _MyAppBar(),
-          SliverToBoxAdapter(child: SizedBox(height: 12)),
+          // SliverToBoxAdapter(child: SizedBox(height: 12)),
           SliverList(
             delegate: SliverChildBuilderDelegate(
                 (context, index) => _MyListItem(index)),
@@ -41,7 +41,9 @@ class _AddButton extends StatelessWidget {
 
     return FlatButton(
       onPressed: isInCart
-          ? null
+          ? () {
+              var cart = context.read<CartModel>();
+            }
           : () {
               // If the item is not in cart, we let the user add it.
               // We are using context.read() here because the callback

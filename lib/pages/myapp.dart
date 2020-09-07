@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluwx/fluwx.dart';
 import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
 import 'package:startup_namer/common/theme.dart';
@@ -7,7 +8,28 @@ import 'package:startup_namer/model/CatalogModel.dart';
 import 'package:startup_namer/pages/tabs/bottom-tab-bar.dart';
 import 'package:startup_namer/route/CustomRoute.dart';
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
+  void initState() {
+    super.initState();
+    _initFluwx();
+  }
+
+  _initFluwx() async {
+    await registerWxApi(
+        appId: "wxd4a218f1d17acb18",
+        doOnAndroid: true,
+        doOnIOS: true,
+        universalLink: "https://your.univerallink.com/link/");
+    var result = await isWeChatInstalled;
+    print("is installed $result");
+  }
+
   @override
   Widget build(BuildContext context) {
     // Using MultiProvider is convenient when providing multiple objects.

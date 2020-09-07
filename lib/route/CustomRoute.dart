@@ -34,6 +34,8 @@ import 'package:startup_namer/pages/plugins/CameraExample.dart';
 import 'package:startup_namer/pages/plugins/VideoPlayerScreen.dart';
 import 'package:startup_namer/pages/snackbar/SnackBarDemo.dart';
 import 'package:startup_namer/pages/tabs/tab-bar.dart';
+import 'package:startup_namer/pages/wechat/SendAuthPage.dart';
+import 'package:startup_namer/pages/wechat/ShareWebPagePage.dart';
 import 'package:startup_namer/screens/cart.dart';
 import 'package:startup_namer/screens/catalog.dart';
 import 'package:startup_namer/screens/login.dart';
@@ -81,6 +83,8 @@ class CustomRoute {
     '/catalog': (context) => MyCatalog(),
     '/cart': (context) => MyCart(),
     '/BarcodePage': (context) => BarcodePage(),
+    '/SendAuthPage': (context) => SendAuthPage(),
+    '/ShareWebPagePage': (context) => ShareWebPagePage(),
   };
 }
 

@@ -28,16 +28,26 @@ https://jsonplaceholder.typicode.com/
 测试db_test.dart
 flutter run lib/db_test.dart
 
-# shared preferences 
+# shared preferences 共享设置
 Supported types
 Only primitive types can be used: int, double, bool, string, and stringList.
 It’s not designed to store a lot of data.
 
-# camera
-## tip
+# camera 照相机插件
 ```
 For android, You must have to update minSdkVersion to 21 (or higher).
-On iOS, lines below have to be added inside ios/Runner/Info.plist in order the access the camera.
+修改路径 android/app/build.gradle的配置
+android {
+    defaultConfig {
+        minSdkVersion 21
+    }
+}
+On iOS, lines below have to be added inside ios/Runner/Info.plist in order the access the 
 <key>NSCameraUsageDescription</key>
 <string>Explanation on why the camera access is needed.</string>
+```
+# fluwx 微信相关操作
+## fluwx2.3.0 需要设置android/build.gradle 中
+```
+ext.kotlin_version = '1.3.71'// fluwx2.3.0 要求kotlin1.3.71
 ```
