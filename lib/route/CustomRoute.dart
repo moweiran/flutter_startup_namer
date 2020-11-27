@@ -39,6 +39,7 @@ import 'package:startup_namer/pages/wechat/ShareWebPagePage.dart';
 import 'package:startup_namer/screens/cart.dart';
 import 'package:startup_namer/screens/catalog.dart';
 import 'package:startup_namer/screens/login.dart';
+import 'package:startup_namer/pages/dios/dioDemo.dart';
 
 class CustomRoute {
   static final routeList = <String, WidgetBuilder>{
@@ -85,6 +86,7 @@ class CustomRoute {
     '/BarcodePage': (context) => BarcodePage(),
     '/SendAuthPage': (context) => SendAuthPage(),
     '/ShareWebPagePage': (context) => ShareWebPagePage(),
+    '/DioDemoPage': (context) => DioDemoPage()
   };
 }
 

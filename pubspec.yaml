@@ -42,12 +42,17 @@ dependencies:
   provider:  ^4.3.2
   barcode_scan: ^1.0.0
   fluwx: ^2.3.0
+  dio: ^3.0.10
+  json_annotation: ^3.0.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_driver:
     sdk: flutter
   test: any
+  build_runner: ^1.0.0
+  json_serializable: ^3.2.0
+
   #mockito: ^4.1.2
 
 # For information on the generic Dart part of this file, see the

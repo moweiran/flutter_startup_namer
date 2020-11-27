@@ -31,12 +31,13 @@ class _HomePageState extends State<HomePage> {
 
   _buildRow(int i) {
     if (i < CustomRoute.routeList.length) {
+      String routeName = keys[i];
       return ListTile(
         title: Text(keys[i]),
         onTap: () {
           Navigator.pushNamed(
             context,
-            keys[i],
+            routeName,
             arguments: ScreenArguments(
               'Extract Arguments Screen1',
               'This message is extracted in the build method3.',
