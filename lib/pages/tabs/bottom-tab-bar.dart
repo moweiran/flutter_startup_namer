@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:startup_namer/pages/business.dart';
 import 'package:startup_namer/pages/home.dart';
+import 'package:startup_namer/pages/school.dart';
 
 class BottomTabBarDemo extends StatefulWidget {
   BottomTabBarDemo();
@@ -9,18 +11,10 @@ class BottomTabBarDemo extends StatefulWidget {
 
 class _BottomTabBarDemoState extends State<BottomTabBarDemo> {
   int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOptions = <Widget>[
     HomePage(),
-    Text(
-      'Business',
-      style: optionStyle,
-    ),
-    Text(
-      'School',
-      style: optionStyle,
-    ),
+    BusinessPage(),
+    SchoolPage(),
   ];
 
   void _onItemTapped(int index) {
@@ -45,20 +39,23 @@ class _BottomTabBarDemoState extends State<BottomTabBarDemo> {
             items: [
               BottomNavigationBarItem(
                 icon: Icon(Icons.home),
-                title: Text('首页'),
+                label: '首页',
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.business),
-                title: Text('Business'),
+                label: '业务',
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.school),
-                title: Text('School'),
+                label: 'School',
               ),
             ],
             currentIndex: _selectedIndex,
             selectedItemColor: Colors.amber[800],
             onTap: _onItemTapped,
+            type: BottomNavigationBarType.fixed,
+            unselectedFontSize: 10,
+            selectedFontSize: 10,
           ),
           drawer: Drawer(
             child: ListView(

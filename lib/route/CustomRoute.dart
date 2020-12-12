@@ -15,12 +15,8 @@ import 'package:startup_namer/pages/animation/PhysicsCardDragDemo.dart';
 import 'package:startup_namer/pages/animation/opacity-animation.dart';
 import 'package:startup_namer/pages/animation/page-route-animation.dart';
 import 'package:startup_namer/pages/barcode/barcode.dart';
+import 'package:startup_namer/pages/dios/dioDemo.dart';
 import 'package:startup_namer/pages/form/MyCustomForm.dart';
-import 'package:startup_namer/pages/persistence/ReadingWritingFiles.dart';
-import 'package:startup_namer/pages/networking/CreateDataExample.dart';
-import 'package:startup_namer/pages/networking/FetchDataExample.dart';
-import 'package:startup_namer/pages/networking/background-parsing.dart';
-import 'package:startup_namer/pages/networking/delete.dart';
 import 'package:startup_namer/pages/image/FadeImage.dart';
 import 'package:startup_namer/pages/list/BaseList.dart';
 import 'package:startup_namer/pages/list/Dismissible.dart';
@@ -29,6 +25,11 @@ import 'package:startup_namer/pages/list/GridView.dart';
 import 'package:startup_namer/pages/list/HorizontalList.dart';
 import 'package:startup_namer/pages/list/LongList.dart';
 import 'package:startup_namer/pages/list/MixedList.dart';
+import 'package:startup_namer/pages/networking/CreateDataExample.dart';
+import 'package:startup_namer/pages/networking/FetchDataExample.dart';
+import 'package:startup_namer/pages/networking/background-parsing.dart';
+import 'package:startup_namer/pages/networking/delete.dart';
+import 'package:startup_namer/pages/persistence/ReadingWritingFiles.dart';
 import 'package:startup_namer/pages/persistence/SharedPreferencesDemo.dart';
 import 'package:startup_namer/pages/plugins/CameraExample.dart';
 import 'package:startup_namer/pages/plugins/VideoPlayerScreen.dart';
@@ -39,7 +40,6 @@ import 'package:startup_namer/pages/wechat/ShareWebPagePage.dart';
 import 'package:startup_namer/screens/cart.dart';
 import 'package:startup_namer/screens/catalog.dart';
 import 'package:startup_namer/screens/login.dart';
-import 'package:startup_namer/pages/dios/dioDemo.dart';
 
 class CustomRoute {
   static final routeList = <String, WidgetBuilder>{
@@ -86,7 +86,7 @@ class CustomRoute {
     '/BarcodePage': (context) => BarcodePage(),
     '/SendAuthPage': (context) => SendAuthPage(),
     '/ShareWebPagePage': (context) => ShareWebPagePage(),
-    '/DioDemoPage': (context) => DioDemoPage()
+    '/DioDemoPage': (context) => DioDemoPage(),
   };
 }
 
